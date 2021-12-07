@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="border">
+    <button class="btn btn-md btn-outline-primary" >
+      <i class="fa fa-user"></i>New Friend</button>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Code</th>
+      <th>Firstname</th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let customer of customers">
+      <td><span>{{customer.id}}</span></td>
+      <td><span>{{customer.customerCode}}</span></td>
+      <td><span>{{customer.customerName}}</span></td>
+      <td><span>{{customer.emailAddress}}</span></td>
+      <td><span>{{customer.contactNumber}}</span></td>
+      <td>
+        <button class="btn btn-sm btn-info">
+          <i class="fa fa-search"></i>Details</button>
+        <button class="btn btn-sm btn-warning">
+          <i class="fa fa-edit"></i>Edit</button>
+        <button class="btn btn-sm btn-danger">
+          <i class="fa fa-remove"></i>Delete</button>
+      </td>
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--  <div class="form-group">-->
+<!--    <label for="customerName">Firstname</label>-->
+<!--    <div class="input-group">-->
+<!--      <input id="fname" class="form-control">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label for="lastname">Lastname</label>-->
+<!--    <div class="input-group">-->
+<!--      <input id="lname" class="form-control">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label for="department">Department</label>-->
+<!--    <div class="input-group">-->
+<!--      <input id="dept" class="form-control">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label>Email</label>-->
+<!--    <div class="input-group">-->
+<!--      <input id="email2" class="form-control">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label> Country</label>-->
+<!--    <div class="input-group">-->
+<!--      <input id="cntry" class="form-control">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</form>-->
